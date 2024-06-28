@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Recommendation System</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+            color: #343a40;
+        }
+        nav {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+        header {
+            text-align: center;
+            padding: 20px 0;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        .description {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        .description p {
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+        .book-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .book-card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            padding: 20px;
+            width: 250px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        .book-card:hover {
+            transform: translateY(-10px);
+        }
+        .book-card img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+        .book-card h3 {
+            font-size: 1.2em;
+            margin: 10px 0;
+        }
+        .book-card p {
+            font-size: 1em;
+            color: #6c757d;
+        }
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-30px);
+            }
+            60% {
+                transform: translateY(-15px);
+            }
+        }
+        .animated-book {
+            display: inline-block;
+            animation: bounce 2s infinite;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/content">Content</a></li>
+            <li><a href="/recommend">Recommend</a></li>
+            <li><a href="/contact">Contact</a></li>
+        </ul>
+    </nav>
+    <header id="home">
+        <h1>Book Recommendation System</h1>
+    </header>
+    <div class="container">
+        <div class="description" id="content">
+            <p>Welcome to our Book Recommendation System! Discover the best books tailored to your taste. Browse through our collection and find your next great read.</p>
+        </div>
+        <div class="heading" id="content">
+            <h1>Trending Books</h1>
+        </div>
+        <div class="book-section">
+            <div class="book-card">
+                <img src="https://via.placeholder.com/150" alt="Book Cover">
+                <h3>The Lovely Bones: A Novel</h3>
+                <p>Author: Alice Seabold</p>
+                <p>Ratings: 9.0</p>
+            </div>
+            <div class="book-card">
+                <img src="https://via.placeholder.com/150" alt="Book Cover">
+                <h3>To Kill a Mockingbird</h3>
+                <p>Author: Dath Brown</p>
+                <p>Ratings: 8.9</p>
+            </div>
+            <div class="book-card">
+                <img src="https://via.placeholder.com/150" alt="Book Cover">
+                <h3>The Two Towers (The Lord of the Rings, Part 2)</h3>
+                <p>Author: Mith Malbom</p>
+                <p>Ratings: 9.2</p>
+            </div>
+            <div class="book-card">
+                <img src="https://via.placeholder.com/150" alt="Book Cover">
+                <h3>Harry Potter and the Prisoner of Azkaban</h3>
+                <p>Author: J. K. Rowling</p>
+                <p>Ratings: 9.7</p>
+            </div>
+        </div>
+    </div>
+    <div class="container" id="recommend">
+        <h2>Find out your Likes Here</h2>
+        <!-- Add your recommendation form or section here -->
+    </div>
+
+</body>
+</html>
